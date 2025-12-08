@@ -15,9 +15,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
-
-    // x-api-key
-
+    // Provide OKHTTP to be able to pass the api key to retrofit to successfully hit the api
     @Provides
     @Singleton
     fun providesOKHttp(): OkHttpClient{
@@ -36,7 +34,7 @@ object NetworkModule {
     @Singleton
     fun providesRetrofit(okHttpClient: OkHttpClient) = Retrofit.Builder()
         .baseUrl(ApiDetails.BASE_URL)
-        .client(okHttpClient)
+        .client(okHttpClient) // Pass the okHttpClient here which will tie header to api call
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 

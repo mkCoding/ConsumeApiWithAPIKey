@@ -24,23 +24,11 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
+        // Add below 3 lines to Add API Key to BuildConfig
         val properties =  Properties()
         properties.load(project.rootProject.file("local.properties").inputStream())
-
         buildConfigField("String", "API_KEY", "\"${properties.getProperty("API_KEY")}\"")
     }
-
-//    val localProperties = Properties()
-//    val localPropertiesFile = File(rootDir, "local.properties")
-//    if(localPropertiesFile.exists() && localPropertiesFile.isFile){
-//        localPropertiesFile.inputStream().use {
-//            localProperties.load(it)
-//        }
-//    }
-//
-
-
-
 
     buildTypes {
         release {
@@ -50,9 +38,6 @@ android {
                 "proguard-rules.pro"
             )
         }
-//        debug{
-//            buildConfigField("String","API_KEY", localProperties.getProperty("API_KEY"))
-//        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

@@ -31,7 +31,7 @@ class ArtworkViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 // create variable to hold main artwork data
-                val data = artworkRepository.getAllArtwork(query = "hug", number = 9)
+                val data = artworkRepository.getAllArtwork(query = "family", number = 9)
                 _artworkState.value = ArtWorkState.Success(data)
 
             }catch (e: IOException){
@@ -41,7 +41,6 @@ class ArtworkViewModel @Inject constructor(
             }
 
         }
-
     }
 }
 
