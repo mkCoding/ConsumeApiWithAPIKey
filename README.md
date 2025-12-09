@@ -5,6 +5,12 @@ What I learned:
 - How to make an api call and pass required key in the header
 - How to hide API key in gitignore before pushing to GitHub
 - API endpoint with parameters should not be put in endpoint within the app
+- Make sure to add your API key to your **local.properties** before modifying your **build.gradle** file
+
+```
+// local.properties
+(ex. API_KEY=XXXXXXXXXXXXXXXXXXXX)
+```
 
 ### Important Learning Screenshots
 
