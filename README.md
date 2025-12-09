@@ -8,8 +8,8 @@ What I learned:
 - Make sure to add your API key to your **local.properties** before modifying your **build.gradle** file
 
 ```
-// local.properties
-(ex. API_KEY=XXXXXXXXXXXXXXXXXXXX)
+// local.properties (example)
+API_KEY=XXXXXXXXXXXXXXXXXXXX)
 ```
 
 ### Important Learning Screenshots
