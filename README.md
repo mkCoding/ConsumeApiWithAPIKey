@@ -20,6 +20,12 @@ API_KEY=XXXXXXXXXXXXXXXXXXXX)
     <p><b>Add API key to Header for Endpoint</b></p>
     <img src="https://github.com/user-attachments/assets/a6b5adac-6174-42d5-8264-14524728e999" style="width: 100%; height: auto;">
   </div>
+
+  <div style="display: inline-block; width: 49%; text-align: center;">
+    <p><b>Add API declared in ApiDetails</b></p>
+    <img alt="Api Details - BuildConfig - Key" src="https://github.com/user-attachments/assets/839972e9-a07b-40f7-b970-341d0b97f7ac" height: auto; />
+  </div>
+  
   
   <div style="display: inline-block; width: 49%; text-align: center;">
     <p><b>Add API key to BuildConfig</b></p>
