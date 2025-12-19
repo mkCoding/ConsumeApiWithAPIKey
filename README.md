@@ -30,6 +30,7 @@ API_KEY=XXXXXXXXXXXXXXXXXXXX)
   <div style="display: inline-block; width: 49%; text-align: center;">
     <p><b>Add API key to BuildConfig</b></p>
     <img src="https://github.com/user-attachments/assets/820fad0d-955d-4d97-8e19-4ae347532819" style="width: 100%; height: auto;">
+    <b>After this make sure to Sync and Build your project</b>
   </div>
 </div>
 
